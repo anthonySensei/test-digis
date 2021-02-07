@@ -19,6 +19,7 @@ const SearchComponent = ({ saveSearchValue }) => {
     <div>
       <input
         type="text"
+        placeholder="Enter City"
         onChange={onSearchChange}
         value={search}
       />
