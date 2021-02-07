@@ -58,13 +58,14 @@ const WeatherChart = ({ search }) => {
   };
 
   return (
-    <div>
+    <div className="chart-container">
       {search && !error && (
         <BarChart
           width={900}
           height={500}
           data={forecast}
-          margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+          margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+        >
           <CartesianGrid strokeDasharray="3 3"/>
           <XAxis dataKey="name" label={{ value: `Date: ${now}`, dy: 30 }} />
           <YAxis
